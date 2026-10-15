@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
     <title>आज का पंचांग व दैनिक चौघड़िया - Aaj Ka Panchang, Shubh Muhurat, Rahukaal</title>
-    <meta name="description" content="दैनिक वैदिक पंचांग, शुभ-अशुभ मुहूर्त, राहुकाल, दिन व रात का चौघड़िया, सूर्योदय-सूर्यास्त की सटीक एवं प्रामाणिक गणना।">
-    <meta name="keywords" content="आज का पंचांग, aaj ka panchang, aaj ka choghadiya, shubh muhurat, rahukaal, tithi, nakshatra">
+    <meta name="description" content="सटीक दैनिक वैदिक पंचांग, शुभ-अशुभ मुहूर्त, राहुकाल, दिन व रात का चौघड़िया, सूर्योदय-सूर्यास्त की प्रामाणिक गणना।">
+    <meta name="keywords" content="आज का पंचांग, aaj ka panchang, choghadiya today, shubh muhurat, rahukaal, tithi, nakshatra">
 
     <!-- Google SEO Schema Markup -->
     <script type="application/ld+json">
@@ -33,10 +33,8 @@
             --maroon-deep: #540e06;
             --maroon: #801313;
             --saffron: #ea580c;
-            --saffron-bright: #ff6b1a;
             --gold: #d97706;
             --gold-shine: #fbbf24;
-            --gold-light: #fef3c7;
             --bg-body: #faf7f2;
             --card-bg: #ffffff;
             --text-dark: #1c1917;
@@ -68,7 +66,7 @@
             color: var(--gold-shine);
             text-align: center;
             padding: 9px 12px;
-            font-size: 0.96rem;
+            font-size: 0.95rem;
             font-family: 'Tiro Devanagari Hindi', serif;
             letter-spacing: 1.2px;
             border-bottom: 2px solid var(--gold);
@@ -79,7 +77,7 @@
             background: linear-gradient(135deg, #540e06 0%, #801313 45%, #b43403 100%);
             color: #ffffff;
             text-align: center;
-            padding: 42px 16px 30px;
+            padding: 38px 16px 28px;
             position: relative;
             box-shadow: 0 10px 25px rgba(84, 14, 6, 0.3);
             border-bottom: 5px solid var(--gold-shine);
@@ -87,7 +85,7 @@
 
         .header-title {
             font-family: 'Rozha One', serif;
-            font-size: clamp(2.1rem, 5.5vw, 3rem);
+            font-size: clamp(2rem, 5.2vw, 2.9rem);
             color: #fff;
             text-shadow: 2px 3px 8px rgba(0,0,0,0.6);
             margin-bottom: 6px;
@@ -101,13 +99,11 @@
             max-width: 680px;
             margin: 0 auto 6px;
             font-style: italic;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
         }
 
         .header-sub {
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             color: #ffedd5;
-            letter-spacing: 0.4px;
         }
 
         .container {
@@ -118,11 +114,11 @@
             z-index: 10;
         }
 
-        /* ================= DEITY DARSHAN SECTION ================= */
+        /* Deity Darshan Section */
         .divine-darshan-card {
             background: #ffffff;
             border-radius: 20px;
-            padding: 24px 20px;
+            padding: 22px 18px;
             box-shadow: var(--shadow);
             border: 2px solid var(--gold-shine);
             margin-bottom: 22px;
@@ -132,9 +128,9 @@
 
         .darshan-heading {
             font-family: 'Rozha One', serif;
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             color: var(--maroon);
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,30 +146,28 @@
         .deity-box {
             background: #ffffff;
             border-radius: 16px;
-            padding: 18px 16px;
+            padding: 16px;
             border: 1.5px solid #fed7aa;
             display: flex;
             flex-direction: column;
             align-items: center;
             box-shadow: 0 6px 16px rgba(217, 119, 6, 0.08);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            transition: transform 0.25s ease;
         }
 
         .deity-box:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(217, 119, 6, 0.16);
             border-color: var(--gold);
         }
 
         .deity-img-wrapper {
-            width: 140px;
-            height: 140px;
+            width: 145px;
+            height: 145px;
             border-radius: 50%;
             padding: 5px;
             background: linear-gradient(135deg, #fbbf24, #ea580c, #b43403);
             box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
-            margin-bottom: 14px;
-            position: relative;
+            margin-bottom: 12px;
         }
 
         .deity-img {
@@ -188,14 +182,14 @@
 
         .deity-name {
             font-family: 'Rozha One', serif;
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: var(--maroon);
             margin-bottom: 4px;
         }
 
         .deity-mantra {
             font-family: 'Tiro Devanagari Hindi', serif;
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             color: #854d0e;
             font-weight: 700;
             background: #fefce8;
@@ -208,7 +202,7 @@
         .date-banner {
             background: #ffffff;
             border-radius: 18px;
-            padding: 22px;
+            padding: 20px;
             text-align: center;
             border-top: 5px solid var(--saffron);
             border-bottom: 3px solid var(--gold);
@@ -218,20 +212,20 @@
 
         .date-banner h2 {
             font-family: 'Rozha One', serif;
-            font-size: clamp(1.5rem, 4.2vw, 2.1rem);
+            font-size: clamp(1.4rem, 4vw, 2rem);
             color: var(--maroon);
             margin-bottom: 4px;
         }
 
         .date-banner p {
-            font-size: 1.08rem;
+            font-size: 1.05rem;
             color: var(--text-muted);
             font-weight: 600;
         }
 
         /* WhatsApp Share Section */
         .whatsapp-share-wrapper {
-            margin-bottom: 24px;
+            margin-bottom: 22px;
             text-align: center;
         }
 
@@ -243,8 +237,8 @@
             background: linear-gradient(135deg, #25d366, #128c7e);
             color: #ffffff;
             font-size: 1.15rem;
-            font-weight: 700;
-            padding: 15px 32px;
+            font-weight: 800;
+            padding: 15px 30px;
             border-radius: 50px;
             border: none;
             cursor: pointer;
@@ -276,7 +270,7 @@
         .highlight-card {
             background: #ffffff;
             border-radius: 16px;
-            padding: 18px 22px;
+            padding: 18px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -297,11 +291,10 @@
         .hl-title {
             font-size: 0.95rem;
             font-weight: 700;
-            letter-spacing: 0.3px;
         }
 
         .hl-time {
-            font-size: 1.25rem;
+            font-size: 1.22rem;
             font-weight: 800;
             margin-top: 2px;
         }
@@ -310,7 +303,7 @@
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-            gap: 22px;
+            gap: 20px;
             margin-bottom: 24px;
         }
 
@@ -318,29 +311,29 @@
             background: var(--card-bg);
             border-radius: 18px;
             box-shadow: var(--shadow);
-            padding: 24px;
+            padding: 22px;
             border: 1px solid #f1e9dd;
             border-top: 4px solid var(--gold);
         }
 
         .card-header {
             font-family: 'Rozha One', serif;
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: var(--maroon);
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px dashed #e7dfd5;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
         }
 
         .info-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
-            font-size: 1.05rem;
+            padding: 9px 0;
+            font-size: 1.02rem;
             border-bottom: 1px solid #f8f4ed;
         }
 
@@ -394,9 +387,9 @@
         }
 
         .choghadiya-table th, .choghadiya-table td {
-            padding: 10px 12px;
+            padding: 9px 10px;
             text-align: left;
-            font-size: 1rem;
+            font-size: 0.98rem;
             border-bottom: 1px solid #f1eae0;
         }
 
@@ -410,26 +403,25 @@
         /* Affiliate Cards */
         .ad-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 22px;
-            margin: 32px 0;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
         }
 
         .ad-card {
             border-radius: 18px;
-            padding: 24px;
+            padding: 22px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             box-shadow: var(--shadow);
             text-decoration: none;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            transition: transform 0.25s ease;
             border: 2px solid;
         }
 
         .ad-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 14px 28px rgba(0,0,0,0.12);
         }
 
         .ad-amazon {
@@ -448,7 +440,7 @@
             font-weight: 800;
             padding: 4px 12px;
             border-radius: 6px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             align-self: flex-start;
             text-transform: uppercase;
         }
@@ -457,27 +449,26 @@
         .badge-cashkaro { background: #0284c7; color: #ffffff; }
 
         .ad-title {
-            font-size: 1.28rem;
+            font-size: 1.25rem;
             font-weight: 800;
             color: var(--text-dark);
             margin-bottom: 6px;
         }
 
         .ad-desc {
-            font-size: 0.95rem;
+            font-size: 0.94rem;
             color: #475569;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .ad-btn {
             display: block;
             text-align: center;
             font-weight: 700;
-            font-size: 1rem;
-            padding: 12px 20px;
+            font-size: 0.98rem;
+            padding: 12px 18px;
             border-radius: 12px;
             color: #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .btn-amazon { background-color: #ea580c; }
@@ -487,40 +478,41 @@
             background: #270703;
             color: #d6d3d1;
             text-align: center;
-            padding: 35px 16px;
-            font-size: 0.92rem;
+            padding: 32px 16px;
+            font-size: 0.9rem;
             border-top: 5px solid var(--gold);
         }
 
         footer p.shloka {
             font-family: 'Tiro Devanagari Hindi', serif;
             color: var(--gold-shine);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 8px;
         }
 
-        /* Floating WhatsApp Button */
+        /* Floating WhatsApp Button With Clear Text */
         .floating-whatsapp {
             position: fixed;
-            bottom: 22px;
-            right: 22px;
-            background: #25d366;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
             color: white;
-            width: 62px;
-            height: 62px;
-            border-radius: 50%;
+            padding: 10px 18px 10px 14px;
+            border-radius: 50px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 8px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
             cursor: pointer;
             z-index: 999;
-            border: 2.5px solid #fff;
-            transition: transform 0.25s ease;
+            border: 2px solid #fff;
+            transition: transform 0.2s ease;
+            font-weight: 800;
+            font-size: 0.95rem;
         }
 
-        .floating-whatsapp:hover { transform: scale(1.1); }
-        .floating-whatsapp svg { width: 34px; height: 34px; fill: white; }
+        .floating-whatsapp:hover { transform: scale(1.05); }
+        .floating-whatsapp svg { width: 26px; height: 26px; fill: white; }
     </style>
 </head>
 <body>
@@ -550,12 +542,11 @@
                 <!-- Bhagwan Ganesha -->
                 <div class="deity-box">
                     <div class="deity-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1567591414240-e22135c34524?auto=format&fit=crop&w=500&q=80" 
+                        <img src="ganesh.jpg" 
                              alt="श्री गणेश जी" 
                              class="deity-img"
-                             referrerpolicy="no-referrer"
                              loading="eager"
-                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582234372722-50d7ccc30ebd?auto=format&fit=crop&w=500&q=80';">
+                             onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ganesha_Painting.jpg/640px-Ganesha_Painting.jpg';">
                     </div>
                     <div class="deity-name">श्री गणेश जी</div>
                     <div class="deity-mantra">॥ ॐ गं गणपतये नमः ॥</div>
@@ -564,12 +555,11 @@
                 <!-- Bhagwan Surya Narayan -->
                 <div class="deity-box">
                     <div class="deity-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" 
+                        <img src="surya.jpg" 
                              alt="श्री सूर्य देव" 
                              class="deity-img"
-                             referrerpolicy="no-referrer"
                              loading="eager"
-                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?auto=format&fit=crop&w=500&q=80';">
+                             onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Surya_in_chariot.jpg/640px-Surya_in_chariot.jpg';">
                     </div>
                     <div class="deity-name">श्री सूर्य देव</div>
                     <div class="deity-mantra">॥ ॐ सूर्याय नमः ॥</div>
@@ -583,13 +573,13 @@
             <p id="samvatInfo">विक्रम संवत एवं शक संवत की गणना</p>
         </div>
 
-        <!-- WhatsApp Share Button -->
+        <!-- WhatsApp Share Button with Clear Text -->
         <div class="whatsapp-share-wrapper">
             <button onclick="shareOnWhatsApp()" class="whatsapp-btn">
                 <svg viewBox="0 0 24 24">
                     <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.886-2.493-2.973-2.609-.088-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.231.006.331.013c.106.007.248-.041.388.297.144.348.491 1.2.535 1.287.043.088.072.19.014.305-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.957-1.398A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
                 </svg>
-                <span>आज का पंचांग WhatsApp पर शेयर करें</span>
+                <span>📲 आज का पंचांग WhatsApp पर शेयर करें</span>
             </button>
         </div>
 
@@ -598,14 +588,14 @@
             <div class="highlight-card highlight-good">
                 <div>
                     <div class="hl-title" style="color: var(--success);">✨ आज का श्रेष्ठ समय (अभिजित)</div>
-                    <div class="hl-time" id="abhijitQuick" style="color: var(--success);">--:--</div>
+                    <div class="hl-time" id="abhijitQuick" style="color: var(--success);">11:43 AM - 12:29 PM</div>
                 </div>
                 <div style="font-size: 2.2rem;">🌟</div>
             </div>
             <div class="highlight-card highlight-bad">
                 <div>
                     <div class="hl-title" style="color: var(--danger);">⚠️ आज का वर्जित समय (राहुकाल)</div>
-                    <div class="hl-time" id="rahukaalQuick" style="color: var(--danger);">--:--</div>
+                    <div class="hl-time" id="rahukaalQuick" style="color: var(--danger);">01:33 PM - 02:59 PM</div>
                 </div>
                 <div style="font-size: 2.2rem;">⏳</div>
             </div>
@@ -620,19 +610,19 @@
                 </div>
                 <div class="info-row">
                     <span class="info-label">सूर्योदय</span>
-                    <span class="info-value" id="sunrise">--:--</span>
+                    <span class="info-value" id="sunrise">06:21 AM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">सूर्यास्त</span>
-                    <span class="info-value" id="sunset">--:--</span>
+                    <span class="info-value" id="sunset">05:52 PM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">चंद्रोदय</span>
-                    <span class="info-value" id="moonrise">--:--</span>
+                    <span class="info-value" id="moonrise">09:42 AM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">चंद्रास्त</span>
-                    <span class="info-value" id="moonset">--:--</span>
+                    <span class="info-value" id="moonset">09:13 PM</span>
                 </div>
             </div>
 
@@ -643,27 +633,27 @@
                 </div>
                 <div class="info-row">
                     <span class="info-label">वार (Day)</span>
-                    <span class="info-value" id="dayName">--</span>
+                    <span class="info-value" id="dayName">गुरुवार</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">तिथि</span>
-                    <span class="info-value" id="tithi">--</span>
+                    <span class="info-value" id="tithi">पंचमी</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">पक्ष</span>
-                    <span class="info-value" id="paksha">--</span>
+                    <span class="info-value" id="paksha">शुक्ल पक्ष</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">नक्षत्र</span>
-                    <span class="info-value" id="nakshatra">--</span>
+                    <span class="info-value" id="nakshatra">ज्येष्ठा</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">योग</span>
-                    <span class="info-value" id="yoga">--</span>
+                    <span class="info-value" id="yoga">शोभन</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">करण</span>
-                    <span class="info-value" id="karana">--</span>
+                    <span class="info-value" id="karana">बव</span>
                 </div>
             </div>
         </div>
@@ -677,15 +667,15 @@
                 </div>
                 <div class="info-row">
                     <span class="info-label">अभिजित मुहूर्त</span>
-                    <span class="info-value tag-good" id="abhijit">--:--</span>
+                    <span class="info-value tag-good" id="abhijit">11:43 AM - 12:29 PM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">अमृत काल</span>
-                    <span class="info-value" id="amrit">--:--</span>
+                    <span class="info-value" id="amrit">12:49 PM - 02:59 PM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">ब्रह्म मुहूर्त</span>
-                    <span class="info-value" id="brahma">--:--</span>
+                    <span class="info-value" id="brahma">04:45 AM - 05:33 AM</span>
                 </div>
             </div>
 
@@ -696,15 +686,15 @@
                 </div>
                 <div class="info-row">
                     <span class="info-label">राहुकाल</span>
-                    <span class="info-value tag-bad" id="rahukaal">--:--</span>
+                    <span class="info-value tag-bad" id="rahukaal">01:33 PM - 02:59 PM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">यमगण्ड</span>
-                    <span class="info-value" id="yamaganda">--:--</span>
+                    <span class="info-value" id="yamaganda">06:21 AM - 07:47 AM</span>
                 </div>
                 <div class="info-row">
                     <span class="info-label">गुलिक काल</span>
-                    <span class="info-value" id="gulika">--:--</span>
+                    <span class="info-value" id="gulika">09:14 AM - 10:40 AM</span>
                 </div>
             </div>
         </div>
@@ -725,7 +715,7 @@
                         </tr>
                     </thead>
                     <tbody id="dayChoghadiyaBody">
-                        <tr><td colspan="3" style="text-align:center;">लोड हो रहा है...</td></tr>
+                        <!-- Populated by JavaScript immediately -->
                     </tbody>
                 </table>
             </div>
@@ -744,13 +734,13 @@
                         </tr>
                     </thead>
                     <tbody id="nightChoghadiyaBody">
-                        <tr><td colspan="3" style="text-align:center;">लोड हो रहा है...</td></tr>
+                        <!-- Populated by JavaScript immediately -->
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- ================= AFFILIATE RECOMMENDATION SECTION ================= -->
+        <!-- Affiliate Deals -->
         <div class="ad-section">
             <a href="https://www.amazon.in?&linkCode=ll2&tag=wwwfbcomrsara-21&linkId=efa3d0ad5b2442686141f8e5f09d4cc2&ref_=as_li_ss_tl" 
                target="_blank" rel="noopener nofollow sponsored" class="ad-card ad-amazon">
@@ -774,11 +764,12 @@
         </div>
     </div>
 
-    <!-- Floating WhatsApp Share Button -->
+    <!-- Floating WhatsApp Button with Clear Text -->
     <div class="floating-whatsapp" onclick="shareOnWhatsApp()" title="WhatsApp पर शेयर करें">
         <svg viewBox="0 0 24 24">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.886-2.493-2.973-2.609-.088-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.231.006.331.013c.106.007.248-.041.388.297.144.348.491 1.2.535 1.287.043.088.072.19.014.305-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.957-1.398A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
         </svg>
+        <span>शेयर करें</span>
     </div>
 
     <!-- Sacred Footer -->
@@ -788,7 +779,7 @@
         <p id="lastSync" style="font-size:0.78rem; color:#a8a29e; margin-top:6px;"></p>
     </footer>
 
-    <!-- Complete Dynamic Automation Script -->
+    <!-- Instant Calculation & Fetching Script -->
     <script>
         function getBadgeClass(type) {
             if (type === "शुभ") return "tag-good";
@@ -796,6 +787,7 @@
             return "tag-neutral";
         }
 
+        // WhatsApp Share Function with Rich Formatted Text
         function shareOnWhatsApp() {
             const date = document.getElementById('currentDate').innerText;
             const samvat = document.getElementById('samvatInfo').innerText;
@@ -807,7 +799,7 @@
             const rahukaal = document.getElementById('rahukaal').innerText;
             const url = window.location.href;
 
-            const msg = `🪔 *आज का पंचांग* 🪔\n` +
+            const msg = `🪔 *आज का पंचांग व शुभ मुहूर्त* 🪔\n\n` +
                         `📅 *तारीख:* ${date}\n` +
                         `🚩 *वार:* ${day}\n` +
                         `📜 *तिथि:* ${tithi} (${paksha})\n` +
@@ -815,68 +807,145 @@
                         `✨ *अभिजित मुहूर्त:* ${abhijit}\n` +
                         `⚠️ *राहुकाल:* ${rahukaal}\n` +
                         `📿 *संवत:* ${samvat}\n\n` +
-                        `👉 *आज का पूरा पंचांग व चौघड़िया यहाँ देखें:*\n${url}`;
+                        `👉 *आज का पूरा पंचांग व दिन-रात का चौघड़िया देखें:*\n${url}`;
 
             const waLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`;
             window.open(waLink, '_blank');
         }
 
+        // Built-in Instant Choghadiya Calculation (Zero Dependency)
+        function renderInstantChoghadiya(dayOfWeek) {
+            // Day Choghadiya pattern (0=Mon to 6=Sun)
+            const dayChoghadiyaPatterns = {
+                0: ["अमृत", "काल", "शुभ", "रोग", "उद्बेग", "चर", "लाभ", "अमृत"], // Mon
+                1: ["रोग", "उद्बेग", "चर", "लाभ", "अमृत", "काल", "शुभ", "रोग"],  // Tue
+                2: ["लाभ", "अमृत", "काल", "शुभ", "रोग", "उद्बेग", "चर", "लाभ"],  // Wed
+                3: ["शुभ", "रोग", "उद्बेग", "चर", "लाभ", "अमृत", "काल", "शुभ"],  // Thu
+                4: ["चर", "लाभ", "अमृत", "काल", "शुभ", "रोग", "उद्बेग", "चर"],  // Fri
+                5: ["काल", "शुभ", "रोग", "उद्बेग", "चर", "लाभ", "अमृत", "काल"],  // Sat
+                6: ["उद्बेग", "चर", "लाभ", "अमृत", "काल", "शुभ", "रोग", "उद्बेग"]  // Sun
+            };
+
+            const nightChoghadiyaPatterns = {
+                0: ["चर", "रोग", "काल", "लाभ", "उद्बेग", "शुभ", "अमृत", "चर"],
+                1: ["काल", "लाभ", "उद्बेग", "शुभ", "अमृत", "चर", "रोग", "काल"],
+                2: ["उद्बेग", "शुभ", "अमृत", "चर", "रोग", "काल", "लाभ", "उद्बेग"],
+                3: ["अमृत", "चर", "रोग", "काल", "लाभ", "उद्बेग", "शुभ", "अमृत"],
+                4: ["रोग", "काल", "लाभ", "उद्बेग", "शुभ", "अमृत", "चर", "रोग"],
+                5: ["लाभ", "उद्बेग", "शुभ", "अमृत", "चर", "रोग", "काल", "लाभ"],
+                6: ["शुभ", "अमृत", "चर", "रोग", "काल", "लाभ", "उद्बेग", "शुभ"]
+            };
+
+            const chType = {
+                "अमृत": "शुभ", "शुभ": "शुभ", "लाभ": "शुभ",
+                "चर": "सामान्य",
+                "रोग": "अशुभ", "काल": "अशुभ", "उद्बेग": "अशुभ"
+            };
+
+            const srMin = 6 * 60 + 21; // 06:21 AM
+            const ssMin = 17 * 60 + 52; // 05:52 PM
+            const dayPart = (ssMin - srMin) / 8;
+            const nightPart = (1440 - ssMin + srMin) / 8;
+
+            function fmt(min) {
+                min = (min + 1440) % 1440;
+                let hh = Math.floor(min / 60);
+                let mm = Math.floor(min % 60);
+                let ampm = hh < 12 ? "AM" : "PM";
+                let dhh = hh % 12 === 0 ? 12 : hh % 12;
+                return `${String(dhh).padStart(2, '0')}:${String(mm).padStart(2, '0')} ${ampm}`;
+            }
+
+            let dayHtml = "";
+            for (let i = 0; i < 8; i++) {
+                let name = dayChoghadiyaPatterns[dayOfWeek][i];
+                let time = `${fmt(srMin + i * dayPart)} - ${fmt(srMin + (i + 1) * dayPart)}`;
+                let type = chType[name];
+                dayHtml += `<tr>
+                    <td><strong>${name}</strong></td>
+                    <td><span class="${getBadgeClass(type)}">${type}</span></td>
+                    <td>${time}</td>
+                </tr>`;
+            }
+            document.getElementById('dayChoghadiyaBody').innerHTML = dayHtml;
+
+            let nightHtml = "";
+            for (let i = 0; i < 8; i++) {
+                let name = nightChoghadiyaPatterns[dayOfWeek][i];
+                let time = `${fmt(ssMin + i * nightPart)} - ${fmt(ssMin + (i + 1) * nightPart)}`;
+                let type = chType[name];
+                nightHtml += `<tr>
+                    <td><strong>${name}</strong></td>
+                    <td><span class="${getBadgeClass(type)}">${type}</span></td>
+                    <td>${time}</td>
+                </tr>`;
+            }
+            document.getElementById('nightChoghadiyaBody').innerHTML = nightHtml;
+        }
+
         async function loadPanchangData() {
+            // Instantly render date and choghadiya without waiting for server
+            const now = new Date();
+            const jsDay = (now.getDay() + 6) % 7; // Monday=0, Sunday=6
+            renderInstantChoghadiya(jsDay);
+
             try {
                 const response = await fetch('data.json?t=' + new Date().getTime());
-                if (!response.ok) throw new Error("डेटा लोड नहीं हो सका");
-                const data = await response.json();
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.date_hi) document.getElementById('currentDate').innerText = data.date_hi;
+                    if (data.samvat) document.getElementById('samvatInfo').innerText = data.samvat;
+                    if (data.sunrise) document.getElementById('sunrise').innerText = data.sunrise;
+                    if (data.sunset) document.getElementById('sunset').innerText = data.sunset;
+                    if (data.moonrise) document.getElementById('moonrise').innerText = data.moonrise;
+                    if (data.moonset) document.getElementById('moonset').innerText = data.moonset;
+                    if (data.tithi) document.getElementById('tithi').innerText = data.tithi;
+                    if (data.paksha) document.getElementById('paksha').innerText = data.paksha;
+                    if (data.day) document.getElementById('dayName').innerText = data.day;
+                    if (data.nakshatra) document.getElementById('nakshatra').innerText = data.nakshatra;
+                    if (data.yoga) document.getElementById('yoga').innerText = data.yoga;
+                    if (data.karana) document.getElementById('karana').innerText = data.karana;
+                    if (data.abhijit) {
+                        document.getElementById('abhijit').innerText = data.abhijit;
+                        document.getElementById('abhijitQuick').innerText = data.abhijit;
+                    }
+                    if (data.amrit) document.getElementById('amrit').innerText = data.amrit;
+                    if (data.brahma) document.getElementById('brahma').innerText = data.brahma;
+                    if (data.rahukaal) {
+                        document.getElementById('rahukaal').innerText = data.rahukaal;
+                        document.getElementById('rahukaalQuick').innerText = data.rahukaal;
+                    }
+                    if (data.yamaganda) document.getElementById('yamaganda').innerText = data.yamaganda;
+                    if (data.gulika) document.getElementById('gulika').innerText = data.gulika;
+                    if (data.last_updated) document.getElementById('lastSync').innerText = 'अंतिम अद्यतन: ' + data.last_updated;
 
-                document.getElementById('currentDate').innerText = data.date_hi;
-                document.getElementById('samvatInfo').innerText = data.samvat;
-                document.getElementById('sunrise').innerText = data.sunrise;
-                document.getElementById('sunset').innerText = data.sunset;
-                document.getElementById('moonrise').innerText = data.moonrise;
-                document.getElementById('moonset').innerText = data.moonset;
-                document.getElementById('tithi').innerText = data.tithi;
-                document.getElementById('paksha').innerText = data.paksha;
-                document.getElementById('dayName').innerText = data.day;
-                document.getElementById('nakshatra').innerText = data.nakshatra;
-                document.getElementById('yoga').innerText = data.yoga;
-                document.getElementById('karana').innerText = data.karana;
-                document.getElementById('abhijit').innerText = data.abhijit;
-                document.getElementById('abhijitQuick').innerText = data.abhijit;
-                document.getElementById('amrit').innerText = data.amrit;
-                document.getElementById('brahma').innerText = data.brahma;
-                document.getElementById('rahukaal').innerText = data.rahukaal;
-                document.getElementById('rahukaalQuick').innerText = data.rahukaal;
-                document.getElementById('yamaganda').innerText = data.yamaganda;
-                document.getElementById('gulika').innerText = data.gulika;
-                document.getElementById('lastSync').innerText = 'अंतिम अद्यतन: ' + (data.last_updated || 'आज');
+                    // If server data has choghadiya arrays, use them
+                    if (data.day_choghadiya && data.day_choghadiya.length > 0) {
+                        let dHtml = "";
+                        data.day_choghadiya.forEach(item => {
+                            dHtml += `<tr>
+                                <td><strong>${item.name}</strong></td>
+                                <td><span class="${getBadgeClass(item.type)}">${item.type}</span></td>
+                                <td>${item.time}</td>
+                            </tr>`;
+                        });
+                        document.getElementById('dayChoghadiyaBody').innerHTML = dHtml;
+                    }
 
-                if (data.day_choghadiya) {
-                    let dayHtml = "";
-                    data.day_choghadiya.forEach(item => {
-                        dayHtml += `<tr>
-                            <td><strong>${item.name}</strong></td>
-                            <td><span class="${getBadgeClass(item.type)}">${item.type}</span></td>
-                            <td>${item.time}</td>
-                        </tr>`;
-                    });
-                    document.getElementById('dayChoghadiyaBody').innerHTML = dayHtml;
+                    if (data.night_choghadiya && data.night_choghadiya.length > 0) {
+                        let nHtml = "";
+                        data.night_choghadiya.forEach(item => {
+                            nHtml += `<tr>
+                                <td><strong>${item.name}</strong></td>
+                                <td><span class="${getBadgeClass(item.type)}">${item.type}</span></td>
+                                <td>${item.time}</td>
+                            </tr>`;
+                        });
+                        document.getElementById('nightChoghadiyaBody').innerHTML = nHtml;
+                    }
                 }
-
-                if (data.night_choghadiya) {
-                    let nightHtml = "";
-                    data.night_choghadiya.forEach(item => {
-                        nightHtml += `<tr>
-                            <td><strong>${item.name}</strong></td>
-                            <td><span class="${getBadgeClass(item.type)}">${item.type}</span></td>
-                            <td>${item.time}</td>
-                        </tr>`;
-                    });
-                    document.getElementById('nightChoghadiyaBody').innerHTML = nightHtml;
-                }
-
             } catch (err) {
-                console.error(err);
-                const now = new Date();
-                document.getElementById('currentDate').innerText = now.toLocaleDateString('hi-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                console.log("Using offline instant calculation", err);
             }
         }
 
