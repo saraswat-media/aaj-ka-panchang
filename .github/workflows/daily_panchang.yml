@@ -1,0 +1,34 @@
+name: Daily Panchang Auto Update
+
+on:
+  schedule:
+    # 18:35 UTC का मतलब भारतीय समयानुसार रोज़ रात 00:05 AM (IST)
+    - cron: '35 18 * * *'
+  workflow_dispatch: # आप GitHub से किसी भी समय मैन्युअली 'Run' भी कर सकते हैं
+
+permissions:
+  contents: write
+
+jobs:
+  update-panchang:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Panchang Script
+        run: |
+          python generate_panchang.py
+
+      - name: Commit and Push Updated data.json
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Panchang data" && git push)
