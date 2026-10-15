@@ -29,20 +29,20 @@
 
     <style>
         :root {
-            --maroon-deep: #701a0e;
-            --maroon: #991b1b;
+            --maroon-deep: #5b1008;
+            --maroon: #881313;
             --saffron: #ea580c;
-            --saffron-light: #fff7ed;
             --gold: #d97706;
             --gold-shine: #fbbf24;
+            --gold-light: #fef3c7;
             --bg-body: #faf7f2;
             --card-bg: #ffffff;
             --text-dark: #1c1917;
             --text-muted: #57534e;
-            --border-gold: #fde68a;
             --success: #15803d;
             --danger: #b91c1c;
             --neutral: #0369a1;
+            --whatsapp: #25d366;
         }
 
         * {
@@ -56,13 +56,13 @@
             background-color: var(--bg-body);
             color: var(--text-dark);
             line-height: 1.6;
-            background-image: radial-gradient(#f3ece1 1px, transparent 1px);
+            background-image: radial-gradient(#f0e6d8 1px, transparent 1px);
             background-size: 20px 20px;
         }
 
-        /* Top Mantram Bar */
+        /* Top Mantra Bar */
         .top-mantra-bar {
-            background: #501308;
+            background: #3e0b05;
             color: var(--gold-shine);
             text-align: center;
             padding: 8px 12px;
@@ -72,64 +72,118 @@
             border-bottom: 2px solid var(--gold);
         }
 
-        /* Hero Header with Divine Iconography */
+        /* Divine Header */
         header {
-            background: linear-gradient(135deg, #701a0e 0%, #991b1b 50%, #c2410c 100%);
+            background: linear-gradient(135deg, #5b1008 0%, #881313 50%, #b43403 100%);
             color: #ffffff;
             text-align: center;
-            padding: 40px 16px 30px;
+            padding: 35px 16px 25px;
             position: relative;
-            box-shadow: 0 8px 20px rgba(112, 26, 14, 0.25);
+            box-shadow: 0 8px 20px rgba(91, 16, 8, 0.25);
             border-bottom: 5px solid var(--gold-shine);
-        }
-
-        .divine-badge {
-            display: inline-block;
-            position: relative;
-            margin-bottom: 12px;
-        }
-
-        .god-img-frame {
-            width: 105px;
-            height: 105px;
-            border-radius: 50%;
-            border: 4px solid var(--gold-shine);
-            box-shadow: 0 0 25px rgba(251, 191, 36, 0.6), inset 0 0 15px rgba(0,0,0,0.4);
-            object-fit: cover;
-            background: #fff;
-            padding: 3px;
         }
 
         .header-title {
             font-family: 'Rozha One', serif;
             font-size: clamp(2rem, 5vw, 2.8rem);
             color: #fff;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-            margin-bottom: 6px;
-            letter-spacing: 0.5px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+            margin-bottom: 4px;
         }
 
         .header-shloka {
             font-family: 'Tiro Devanagari Hindi', serif;
             color: var(--gold-shine);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             max-width: 650px;
-            margin: 0 auto 10px;
+            margin: 0 auto;
             font-style: italic;
-        }
-
-        .header-sub {
-            font-size: 1rem;
-            color: #ffedd5;
-            letter-spacing: 0.5px;
         }
 
         .container {
             max-width: 950px;
-            margin: -20px auto 30px;
+            margin: -25px auto 30px;
             padding: 0 16px;
             position: relative;
             z-index: 10;
+        }
+
+        /* ================= DIVINE PHOTOS GALLERY SECTION ================= */
+        .divine-darshan-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border: 2px solid var(--gold-shine);
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        .darshan-heading {
+            font-family: 'Rozha One', serif;
+            font-size: 1.35rem;
+            color: var(--maroon);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .darshan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .deity-box {
+            background: linear-gradient(180deg, #fffcf5 0%, #ffffff 100%);
+            border-radius: 14px;
+            padding: 14px;
+            border: 1px solid #fde68a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.08);
+            transition: transform 0.25s ease;
+        }
+
+        .deity-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(217, 119, 6, 0.16);
+        }
+
+        .deity-img-wrapper {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #fbbf24, #ea580c);
+            box-shadow: 0 6px 16px rgba(234, 88, 12, 0.3);
+            margin-bottom: 12px;
+        }
+
+        .deity-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+            display: block;
+        }
+
+        .deity-name {
+            font-family: 'Rozha One', serif;
+            font-size: 1.25rem;
+            color: var(--maroon);
+            margin-bottom: 4px;
+        }
+
+        .deity-mantra {
+            font-family: 'Tiro Devanagari Hindi', serif;
+            font-size: 0.92rem;
+            color: #78350f;
+            font-weight: 600;
         }
 
         /* Date Banner Card */
@@ -140,8 +194,8 @@
             text-align: center;
             border-top: 5px solid var(--saffron);
             border-bottom: 3px solid var(--gold);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            margin-bottom: 24px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 16px;
         }
 
         .date-banner h2 {
@@ -157,7 +211,43 @@
             font-weight: 500;
         }
 
-        /* Quick Muhurat Highlight Pill */
+        /* WhatsApp Share Button */
+        .whatsapp-share-wrapper {
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 14px 28px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+            transition: all 0.25s ease;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 22px rgba(37, 211, 102, 0.45);
+        }
+
+        .whatsapp-btn svg {
+            width: 26px;
+            height: 26px;
+            fill: #ffffff;
+        }
+
+        /* Quick Muhurat Highlights */
         .quick-highlights {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -189,7 +279,6 @@
         .hl-title {
             font-size: 0.95rem;
             font-weight: 700;
-            text-transform: uppercase;
         }
 
         .hl-time {
@@ -197,7 +286,7 @@
             font-weight: 800;
         }
 
-        /* Standard Cards Grid */
+        /* Standard Grid */
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -249,7 +338,6 @@
             color: var(--text-dark);
         }
 
-        /* Status Badges */
         .tag-good {
             color: var(--success);
             background: #dcfce7;
@@ -277,7 +365,7 @@
             font-size: 0.9rem;
         }
 
-        /* Choghadiya Tables */
+        /* Choghadiya Table */
         .choghadiya-table {
             width: 100%;
             border-collapse: collapse;
@@ -368,16 +456,11 @@
             padding: 11px 18px;
             border-radius: 10px;
             color: #fff;
-            transition: background-color 0.2s;
         }
 
         .btn-amazon { background-color: #ea580c; }
-        .btn-amazon:hover { background-color: #c2410c; }
-
         .btn-cashkaro { background-color: #0284c7; }
-        .btn-cashkaro:hover { background-color: #0369a1; }
 
-        /* Footer */
         footer {
             background: #270703;
             color: #d6d3d1;
@@ -393,46 +476,105 @@
             font-size: 1.05rem;
             margin-bottom: 8px;
         }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 999;
+            border: 2px solid #fff;
+            transition: transform 0.2s;
+        }
+
+        .floating-whatsapp:hover { transform: scale(1.1); }
+        .floating-whatsapp svg { width: 34px; height: 34px; fill: white; }
     </style>
 </head>
 <body>
 
     <!-- Auspicious Top Mantra Bar -->
     <div class="top-mantra-bar">
-        ॥ ॐ श्री गणेशाय नमः ॥ ॐ सूर्याय नमः ॥ ॐ नमः शिवाय ॥
+        ॥ ॐ श्री गणेशाय नमः ॥ ॐ सूर्याय नमः ॥ ॐ नमो भगवते वासुदेवाय ॥ ॐ नमः शिवाय ॥
     </div>
 
-    <!-- Divine Header with Bhagwan Ganesha Photo -->
+    <!-- Divine Header -->
     <header>
-        <div class="divine-badge">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ganesha_statue.jpg/320px-Ganesha_statue.jpg" 
-                 alt="भगवान श्री गणेश" class="god-img-frame">
-        </div>
         <h1 class="header-title">卐 दैनिक वैदिक पंचांग 卐</h1>
         <p class="header-shloka">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
-        <p class="header-sub">सटीक तिथि, नक्षत्र, शुभ मुहूर्त, राहुकाल एवं अमृत-लाभ चौघड़िया</p>
     </header>
 
     <div class="container">
-        <!-- Date & Samvat Header -->
+
+        <!-- ================= DIVINE GOD PHOTOS (DAILY DARSHAN) ================= -->
+        <div class="divine-darshan-card">
+            <div class="darshan-heading">
+                <span>🪔</span>
+                <span>दैनिक मंगल दर्शन एवं वंदना</span>
+                <span>🪔</span>
+            </div>
+            <div class="darshan-grid">
+                <!-- Bhagwan Ganesha -->
+                <div class="deity-box">
+                    <div class="deity-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ganesha_Painting.jpg/640px-Ganesha_Painting.jpg" 
+                             alt="भगवान श्री गणेश" class="deity-img">
+                    </div>
+                    <div class="deity-name">श्री गणेश जी</div>
+                    <div class="deity-mantra">॥ ॐ गं गणपतये नमः ॥</div>
+                </div>
+
+                <!-- Bhagwan Surya Narayan -->
+                <div class="deity-box">
+                    <div class="deity-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Surya_in_chariot.jpg/640px-Surya_in_chariot.jpg" 
+                             alt="भगवान सूर्य नारायण" class="deity-img">
+                    </div>
+                    <div class="deity-name">श्री सूर्य देव</div>
+                    <div class="deity-mantra">॥ ॐ सूर्याय नमः ॥</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date Banner -->
         <div class="date-banner">
             <h2 id="currentDate">पंचांग लोड हो रहा है...</h2>
             <p id="samvatInfo">विक्रम संवत एवं शक संवत की गणना</p>
         </div>
 
-        <!-- Quick Muhurat Highlights (Top Alerts) -->
+        <!-- WhatsApp Share Button -->
+        <div class="whatsapp-share-wrapper">
+            <button onclick="shareOnWhatsApp()" class="whatsapp-btn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.886-2.493-2.973-2.609-.088-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.231.006.331.013c.106.007.248-.041.388.297.144.348.491 1.2.535 1.287.043.088.072.19.014.305-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.957-1.398A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+                </svg>
+                <span>आज का पंचांग WhatsApp पर शेयर करें</span>
+            </button>
+        </div>
+
+        <!-- Quick Muhurat Highlights -->
         <div class="quick-highlights">
             <div class="highlight-card highlight-good">
                 <div>
                     <div class="hl-title" style="color: var(--success);">✨ आज का श्रेष्ठ समय (अभिजित)</div>
-                    <div class="hl-time" id="abhijitQuick" style="color: var(--success);">11:43 AM - 12:29 PM</div>
+                    <div class="hl-time" id="abhijitQuick" style="color: var(--success);">--:--</div>
                 </div>
                 <div style="font-size: 2rem;">🌟</div>
             </div>
             <div class="highlight-card highlight-bad">
                 <div>
                     <div class="hl-title" style="color: var(--danger);">⚠️ आज का वर्जित समय (राहुकाल)</div>
-                    <div class="hl-time" id="rahukaalQuick" style="color: var(--danger);">01:33 PM - 02:59 PM</div>
+                    <div class="hl-time" id="rahukaalQuick" style="color: var(--danger);">--:--</div>
                 </div>
                 <div style="font-size: 2rem;">⏳</div>
             </div>
@@ -440,7 +582,6 @@
 
         <!-- Solar, Lunar & Panchang Elements -->
         <div class="grid-2">
-            <!-- Sun & Moon Timings -->
             <div class="card">
                 <div class="card-header">
                     <span>सूर्य व चंद्र गणना</span>
@@ -464,7 +605,6 @@
                 </div>
             </div>
 
-            <!-- Panchang Angas -->
             <div class="card">
                 <div class="card-header">
                     <span>पंचांग मुख्य अंग</span>
@@ -497,9 +637,8 @@
             </div>
         </div>
 
-        <!-- Muhurtas (Auspicious & Inauspicious) -->
+        <!-- Muhurtas -->
         <div class="grid-2">
-            <!-- Shubh Muhurat -->
             <div class="card" style="border-top-color: var(--success);">
                 <div class="card-header" style="color: var(--success);">
                     <span>शुभ मुहूर्त</span>
@@ -519,7 +658,6 @@
                 </div>
             </div>
 
-            <!-- Ashubh Timings -->
             <div class="card" style="border-top-color: var(--danger);">
                 <div class="card-header" style="color: var(--danger);">
                     <span>अशुभ समय (वर्जित)</span>
@@ -542,7 +680,6 @@
 
         <!-- Choghadiya Section -->
         <div class="grid-2">
-            <!-- Day Choghadiya -->
             <div class="card">
                 <div class="card-header">
                     <span>दिन का चौघड़िया</span>
@@ -562,7 +699,6 @@
                 </table>
             </div>
 
-            <!-- Night Choghadiya -->
             <div class="card">
                 <div class="card-header">
                     <span>रात का चौघड़िया</span>
@@ -583,9 +719,8 @@
             </div>
         </div>
 
-        <!-- ================= AFFILIATE RECOMMENDATION CARDS ================= -->
+        <!-- Affiliate Deals -->
         <div class="ad-section">
-            <!-- Amazon Religious & Puja Items -->
             <a href="https://www.amazon.in?&linkCode=ll2&tag=wwwfbcomrsara-21&linkId=efa3d0ad5b2442686141f8e5f09d4cc2&ref_=as_li_ss_tl" 
                target="_blank" rel="noopener nofollow sponsored" class="ad-card ad-amazon">
                 <div>
@@ -596,7 +731,6 @@
                 <span class="ad-btn btn-amazon">Amazon पर ऑफर्स देखें 🛍️</span>
             </a>
 
-            <!-- CashKaro Deals -->
             <a href="https://cashkaro.com?r=455319&fname=Ramesh" 
                target="_blank" rel="noopener nofollow sponsored" class="ad-card ad-cashkaro">
                 <div>
@@ -609,19 +743,51 @@
         </div>
     </div>
 
-    <!-- Spiritual Footer -->
+    <!-- Floating WhatsApp Share Button -->
+    <div class="floating-whatsapp" onclick="shareOnWhatsApp()" title="WhatsApp पर शेयर करें">
+        <svg viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.886-2.493-2.973-2.609-.088-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.346-.219.462-.219s.231.006.331.013c.106.007.248-.041.388.297.144.348.491 1.2.535 1.287.043.088.072.19.014.305-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.957-1.398A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+        </svg>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p class="shloka">॥ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः । सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत् ॥</p>
         <p>© दैनिक पंचांग | शुद्ध एवं प्रामाणिक वैदिक काल-गणना</p>
         <p id="lastSync" style="font-size:0.75rem; color:#a8a29e; margin-top:6px;"></p>
     </footer>
 
-    <!-- Automatic Data Fetching Script -->
+    <!-- Scripts -->
     <script>
         function getBadgeClass(type) {
             if (type === "शुभ") return "tag-good";
             if (type === "अशुभ") return "tag-bad";
             return "tag-neutral";
+        }
+
+        function shareOnWhatsApp() {
+            const date = document.getElementById('currentDate').innerText;
+            const samvat = document.getElementById('samvatInfo').innerText;
+            const day = document.getElementById('dayName').innerText;
+            const tithi = document.getElementById('tithi').innerText;
+            const paksha = document.getElementById('paksha').innerText;
+            const nakshatra = document.getElementById('nakshatra').innerText;
+            const abhijit = document.getElementById('abhijit').innerText;
+            const rahukaal = document.getElementById('rahukaal').innerText;
+            const url = window.location.href;
+
+            const msg = `🪔 *आज का पंचांग* 🪔\n` +
+                        `📅 *तारीख:* ${date}\n` +
+                        `🚩 *वार:* ${day}\n` +
+                        `📜 *तिथि:* ${tithi} (${paksha})\n` +
+                        `⭐ *नक्षत्र:* ${nakshatra}\n` +
+                        `✨ *अभिजित मुहूर्त:* ${abhijit}\n` +
+                        `⚠️ *राहुकाल:* ${rahukaal}\n` +
+                        `📿 *संवत:* ${samvat}\n\n` +
+                        `👉 *आज का पूरा पंचांग व चौघड़िया यहाँ देखें:*\n${url}`;
+
+            const waLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`;
+            window.open(waLink, '_blank');
         }
 
         async function loadPanchangData() {
@@ -652,7 +818,6 @@
                 document.getElementById('gulika').innerText = data.gulika;
                 document.getElementById('lastSync').innerText = 'अंतिम अद्यतन: ' + (data.last_updated || 'आज');
 
-                // चौघड़िया रेंडरिंग
                 if (data.day_choghadiya) {
                     let dayHtml = "";
                     data.day_choghadiya.forEach(item => {
