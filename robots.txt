@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saraswat-media.github.io/aaj-ka-panchang/sitemap.xml
